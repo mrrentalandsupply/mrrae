@@ -1,0 +1,454 @@
+/*Vars*/
+$mr-blue: #00b8d4;
+$mr-white: #ffffff;
+$mr-gray: #424242;
+
+//Variables MediaQueries
+$smarthphone: "(max-width:480px)";
+$tablets: "(max-width:728px)";
+$other: "(max-width:1300px)";
+$mindesktop: "(min-width:1250px)";
+$desktop: "(max-width:1250px)";
+
+
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+nav {
+    .brand-logo {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    ul li a{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 17px;
+    }
+}
+
+.slider{
+    height: 100% !important;
+
+    @media #{$smarthphone}{
+        height: 550px !important;
+    }
+
+    @media #{$tablets}{
+        height: 550px !important;
+    }
+
+    .slides{
+        height: 100% !important;
+
+        @media #{$smarthphone}{
+            height: 500px !important;
+        }
+
+        @media #{$tablets}{
+            height: 500px !important;
+        }
+    }
+    .indicators{
+        display: none;
+    }
+    a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    .b2{
+        opacity: 0.8;
+    }
+    .b3{
+        opacity: 0.8;
+    }
+    h1{
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 52px;
+        font-weight: bold;
+        margin-top: 100px;
+
+        @media #{$smarthphone}{
+            margin-top: 20px;
+            height: auto !important;
+        }
+
+        @media #{$tablets}{
+            margin-top: 20px;
+            height: auto !important;
+        }
+        
+    }
+    h2{
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+}
+
+.welcome{
+    height: 100% !important;
+    background: #FFFFFF;
+    padding-top: 1px;
+    margin-bottom: 50px;
+
+    @media #{$smarthphone}{
+        height: auto !important;
+    }
+
+    @media #{$tablets}{
+        height: auto !important;
+    }
+
+
+    h3{
+        color: $mr-gray;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        margin: 100px 0px 50px 0px;
+
+        @media #{$smarthphone}{
+            margin: 40px 0px 20px 0px;
+        }
+
+        @media #{$tablets}{
+            margin: 40px 0px 20px 0px;
+        }
+    }
+    img{
+        height: 270px;
+        width: 270px;
+    }
+    .img-logo{
+        height: 200px;
+        width: 200px;
+    }
+    .img-special{
+        height: 250px;
+        width: 290px;
+        margin-top: 20px;
+    }
+    p{  
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    a{
+        margin-top: -25px;
+    }
+
+}
+
+.machine{
+    height: 100% !important;
+    background: #5E96B1;
+    background-size: cover;
+    padding-top: 40px;
+    
+
+    @media #{$smarthphone}{
+        height: auto !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media #{$tablets}{
+        height: auto !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        color: $mr-white;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        margin: 120px 0px 50px 0px;
+    }
+
+    img{
+        border-radius: 50%; 
+        height: 180px;
+        width: 180px;
+    }
+
+    p{  
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .p-link{
+        color: #e1f5fe;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        margin-top: -30px; 
+    }
+
+    .btn-large{
+        background: $mr-gray;
+        margin-top: 30px;
+    }
+
+}
+
+
+.footer{
+    height: 93% !important;
+    background: url("../img/i4a.jpg");
+    background-size: cover;
+
+    @media #{$smarthphone}{
+        height: auto !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media #{$tablets}{
+        height: auto !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    h3{
+        color: $mr-white;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 100px 0px 50px 0px;
+
+        @media #{$smarthphone}{
+            height: auto !important;
+        }
+
+        @media #{$tablets}{
+            height: auto !important;
+        }
+    }
+
+    p{  
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 27px;
+    }
+
+    .p-info{
+        color: #e1f5fe;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        margin-top: -5px; 
+    }
+}
+
+.footer-copyright{
+    background: #5E96B1;
+    color: #FFFFFF;
+    height: 7% !important;
+
+    @media #{$smarthphone}{
+        height: 50px !important;
+    }
+
+    @media #{$tablets}{
+        height: 50px !important;
+    }
+
+    a {
+        margin-top: 15px;
+    } 
+}
+
+.footer-copyright-m{
+    background: #5E96B1;
+    color: #FFFFFF;
+    padding: 10px;
+
+    a {
+        margin-top: 15px;
+    } 
+}
+
+.category{
+    height: 100% !important;
+    background: url("../img/i4a.jpg");
+    background-size: cover;
+    padding-top: 40px;
+
+    h3{
+        color: $mr-white;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        margin: 120px 0px 50px 0px;
+    }
+
+    img{
+        border-radius: 50%; 
+        height: 180px;
+        width: 180px;
+    }
+
+    p{  
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+    }
+
+    .p-link{
+        color: #e1f5fe;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        margin-top: -30px; 
+    }
+
+    .btn-large{
+        background: $mr-gray;
+        margin-top: 30px;
+    }
+
+}
+
+.articles{
+
+    background: #bdbdbd;
+    padding: 40px;
+
+    .col-machine{
+        margin-top: 40px;
+    }
+
+    img{
+        border-radius: 50%;
+        height: 300px;
+        width: 310px;
+    }
+
+    h3{
+        color: $mr-gray;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    p{  
+        color: $mr-gray;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+
+}
+
+.modals{
+
+    h4{
+        color: white;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    h6{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0px;
+    }
+
+    img{
+        border-radius: 50%;
+        height: 350px;
+        width: 360px;
+        margin-top: 40px;
+    }
+
+    p{  
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+}
+
+   .input-field input[type=text]{
+     color: #ffffff;
+   }
+
+   .logo-nav{
+        @media #{$smarthphone}{
+            display: none;
+        }
+
+        @media #{$tablets}{
+            display: none;
+        }
+   }
+
+   .mision{
+        height: 93% !important;
+        background: url("../img/i6.jpg");
+        background-size: cover;
+        padding: 40px;
+
+        @media #{$smarthphone}{
+           height: auto !important;
+        }
+
+        @media #{$tablets}{
+           height: auto !important;
+        }
+
+        h3{
+            color: $mr-white;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin: 100px 0px 50px 0px;
+
+        }
+        p{  
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 26px;
+        }
+   }
+
+    .vision{
+        height: 93% !important;
+        background: url("../img/i19.jpg");
+        background-size: cover;
+        padding: 40px;
+
+        @media #{$smarthphone}{
+           height: auto !important;
+        }
+
+        @media #{$tablets}{
+           height: auto !important;
+        }
+
+        h3{
+            color: $mr-white;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            margin: 100px 0px 50px 0px;
+
+        }
+        p{  
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 26px;
+        }
+   }
+
+   .footer-copyright-info{
+        background: #5E96B1;
+        color: #FFFFFF;
+        height: 7% !important;
+        a {
+            margin-top: 15px;
+        } 
+    }
+
+
+
